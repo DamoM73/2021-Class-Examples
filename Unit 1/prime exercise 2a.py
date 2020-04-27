@@ -1,8 +1,7 @@
 def is_prime(candidate):
     # determines if candidate is a prime number
-    prime = True
     dividend = 2
-    while prime:
+    while True:
         if candidate % dividend == 0:
             return False
         elif candidate - dividend == 1:
@@ -18,7 +17,7 @@ def find_next_prime(start):
 
     while True:
         if is_prime(next_num):
-            return(next_num)
+            return next_num
         else:
             next_num += 1
 
