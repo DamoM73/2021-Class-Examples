@@ -1,4 +1,5 @@
 import sqlite3
+import os
 
 DB_FILE = "./Unit 3/CSV_import/fitness.db"
 
@@ -73,8 +74,6 @@ def create_database():
                     """
     create_table(readings_table)
 
-
-
 def import_csv():
     # extreacts the data from provided CVS files and enters into the database
     pass
@@ -88,4 +87,5 @@ def export_csv():
     pass
 
 # ===== MAIN PROGRAM =====
-create_database()
+if not os.path.exists(DB_FILE):
+    create_database()
