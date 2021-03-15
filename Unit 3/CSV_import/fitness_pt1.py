@@ -1,7 +1,8 @@
 import sqlite3
 import os
 
-DB_FILE = "./Unit 3/CSV_import/fitness.db"
+PATH = "/GIT/2021-Class-Examples/Unit 3/CSV_import/"
+DB_FILE = PATH + "fitness.db"
 
 def create_table(sql_command):
     # create a table within the database
